@@ -4,7 +4,11 @@ window.alert("Welcome to the funniest Mad Lib story ever!");
 
 function changeAnimal(){
     var newAnimal = window.prompt('What animal do you want to be?');
-    document.getElementById('animal').innerText = newAnimal;
+    let animalElements = document.querySelectorAll('.animal');
+        for (let j = 0; j < animalElements.length; j++){
+            animalElements[j].innerText = newAnimal;
+        }
+        document.getElementById('animal').innerText = newAnimal;
 }
 document.getElementById('changeAnimal').onclick = changeAnimal;
 
