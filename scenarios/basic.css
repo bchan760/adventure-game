@@ -13,3 +13,7 @@ button {
   text-decoration: none;
   color: black
 }
+
+.foo {
+  font-size: 200px;
+}
